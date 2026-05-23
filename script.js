@@ -1,7 +1,1 @@
-function showMessage(){
-
-alert(
-"Application form will open soon!"
-);
-
-}
+console.log("Ramesh Staffing Website Loaded");
