@@ -1,4 +1,4 @@
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("RaxFUuEpa4IUul_7m");
 
 document
 .getElementById("contact-form")
@@ -6,27 +6,15 @@ document
 
 e.preventDefault();
 
-const templateParams = {
-
-name: document.querySelector('[name="name"]').value,
-
-email: document.querySelector('[name="email"]').value,
-
-message: document.querySelector('[name="message"]').value,
-
-to_email: "sahil656556hay@gmail.com"
-
-};
-
-emailjs.send(
-"service_arc60xq",
-"YOUR_TEMPLATE_ID",
-templateParams
+emailjs.sendForm(
+"service_y7ui1tt",
+"template_ltq5ab7",
+this
 )
 
 .then(function(){
 
-alert("Message sent successfully");
+alert("Message Sent Successfully");
 
 document
 .getElementById("contact-form")
@@ -36,7 +24,9 @@ document
 
 .catch(function(error){
 
-alert("Failed : " + JSON.stringify(error));
+alert(
+"Failed : " + JSON.stringify(error)
+);
 
 });
 
