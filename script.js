@@ -2,7 +2,7 @@ emailjs.init("RaxFUuEpa4IUul_7m");
 
 document
 .getElementById("contact-form")
-.addEventListener("submit",function(e){
+.addEventListener("submit", function(e){
 
 e.preventDefault();
 
@@ -14,17 +14,18 @@ this
 
 .then(function(){
 
-alert(
-"Application Submitted Successfully"
-);
+alert("Application Submitted Successfully");
+
+document
+.getElementById("contact-form").reset();
 
 })
 
-.catch(function(){
+.catch(function(error){
 
-alert(
-"Something went wrong"
-);
+console.log(error);
+
+alert("Submission failed. Please try again");
 
 });
 
