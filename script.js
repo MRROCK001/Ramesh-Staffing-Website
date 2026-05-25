@@ -2,7 +2,7 @@ emailjs.init("RaxFUuEpa4IUul_7m");
 
 document
 .getElementById("contact-form")
-.addEventListener("submit",function(e){
+.addEventListener("submit", function(e){
 
 e.preventDefault();
 
@@ -14,9 +14,7 @@ this
 
 .then(function(){
 
-alert(
-"Application Submitted Successfully"
-);
+alert("Message Sent Successfully");
 
 document
 .getElementById("contact-form")
@@ -26,10 +24,8 @@ document
 
 .catch(function(error){
 
-console.log(error);
-
 alert(
-"Email setup issue. Check EmailJS template fields."
+"Failed : " + JSON.stringify(error)
 );
 
 });
