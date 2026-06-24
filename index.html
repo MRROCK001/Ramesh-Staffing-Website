@@ -2,207 +2,284 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil IT Academy</title>
 
-<title>Ramesh Staffing Services</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
 
-<nav>
+    <!-- ================= NAVBAR ================= -->
 
-<div class="logo">
-Ramesh Staffing
-</div>
+    <header>
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#jobs">Jobs</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+        <div class="logo">
+            <h2>Sahil IT Academy</h2>
+        </div>
 
-</nav>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#fees">Fees</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
 
-<section class="hero">
+    </header>
 
-<div class="overlay"></div>
+    <!-- ================= HERO ================= -->
 
-<div class="hero-content">
+    <section class="hero" id="home">
 
-<h1>Find The Right Talent Faster</h1>
+        <div class="hero-text">
 
-<p>
-Trusted staffing and recruitment services
-for businesses and job seekers.
-</p>
+            <h1>Become a Professional IT Support Engineer</h1>
 
-<a href="#contact" class="btn">
-Apply Now
-</a>
+            <p>
+                Learn Basic Computer, IT Support, Networking,
+                Windows Installation, Active Directory,
+                Outlook, Office 365 and Interview Preparation.
+            </p>
 
-</div>
+            <a href="#admission" class="btn">
+                Enroll Now
+            </a>
 
-</section>
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about" id="about">
+
+        <h2>About Academy</h2>
+
+        <p>
+
+            Sahil IT Academy provides practical training in
+            Basic Computer, Desktop Support, Windows,
+            Networking, Printer Troubleshooting,
+            Outlook Configuration and Company Requirement
+            based IT Training.
+
+        </p>
+
+    </section>
+
+    <!-- ================= COURSES ================= -->
+
+    <section id="courses">
+
+        <h2>Our Courses</h2>
+
+        <div class="course-container">
+
+            <div class="course-card">
+
+                <i class="fa-solid fa-computer"></i>
+
+                <h3>Basic Computer</h3>
+
+                <p>
+
+                    Learn Computer Fundamentals,
+                    Windows, MS Word,
+                    Excel, PowerPoint,
+                    Internet and Email.
+
+                </p>
+
+            </div>
+
+            <div class="course-card">
+
+                <i class="fa-solid fa-desktop"></i>
+
+                <h3>IT Support Engineer</h3>
+
+                <p>
+
+                    Windows Installation,
+                    Active Directory,
+                    Outlook,
+                    Networking,
+                    Printer,
+                    Remote Support.
+
+                </p>
+
+            </div>
+
+            <div class="course-card">
+
+                <i class="fa-solid fa-building"></i>
+
+                <h3>Company Requirement Training</h3>
+
+                <p>
+
+                    Company Level Practical Training,
+                    Interview Preparation,
+                    Resume Building,
+                    Mock Interview,
+                    Placement Support.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEES ================= -->
+
+    <section id="fees">
+
+        <h2>Fee Structure</h2>
+
+        <table>
+
+            <tr>
+                <th>Course</th>
+                <th>Duration</th>
+                <th>Fees</th>
+            </tr>
+
+            <tr>
+                <td>Basic Computer</td>
+                <td>30 Days</td>
+                <td>₹5,500</td>
+            </tr>
+
+            <tr>
+                <td>IT Support Engineer</td>
+                <td>45 Days</td>
+                <td>₹9,500</td>
+            </tr>
+
+            <tr>
+                <td>Company Requirement Training</td>
+                <td>60 Days</td>
+                <td>₹12,500</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- ================= ADMISSION ================= -->
+
+    <section id="admission">
+
+        <h2>Admission Form</h2>
+
+        <form id="admissionForm">
+
+            <input type="text" name="name" placeholder="Full Name" required>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <input type="tel" name="phone" placeholder="Mobile Number" required>
+            
+            <select name="course" required>
+
+                <option value="">Select Course</option>
+
+                <option value="Basic Computer">Basic Computer</option>
+
+                <option value="IT Support Engineer">IT Support Engineer</option>
+
+                <option value="Company Requirement Training">Company Requirement Training</option>
+
+            </select>
+
+            <textarea name="message" placeholder="Message">
+        </textarea>
+
+            <button type="submit">
+                Submit Admission
+            </button>
+
+        </form>
+
+    </section>
+    <section class="trainer">
+
+        <h2>Meet Your Trainer</h2>
+
+        <div class="trainer-card">
+
+            <img src="sahil.jpg" alt="Sahil Kumar">
+
+            <h3>Sahil Kumar</h3>
+
+            <p>
+                IT Support Engineer with practical experience in
+                Desktop Support, Windows, Networking,
+                Active Directory, Outlook and Company IT Support.
+            </p>
+
+            <a href="https://mrrock001.github.io/portfolio-sahil/" target="_blank" class="btn">
+                View Portfolio
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+
+            📞 +91 7387923490
+
+        </p>
+
+        <p>
+
+            📧 sahilitacademy@gmail.com
 
 
-<section class="stats">
+        </p>
 
-<div class="box">
-<h2>500+</h2>
-<p>Jobs Posted</p>
-</div>
+        <p>
 
-<div class="box">
-<h2>1000+</h2>
-<p>Candidates</p>
-</div>
+            📍 Nautan bazzar
 
-<div class="box">
-<h2>15+</h2>
-<p>Partner Companies</p>
-</div>
+        </p>
 
-</section>
+    </section>
 
+    <!-- ================= FOOTER ================= -->
 
-<section id="services">
+    <footer>
 
-<h1 class="title">Our Services</h1>
+        <p>
 
-<div class="cards">
+            © 2026 Sahil IT Academy | All Rights Reserved
 
-<div class="card">
-<i class="fa-solid fa-users"></i>
-<h2>Contract Staffing</h2>
-<p>Flexible workforce hiring</p>
-</div>
+        </p>
 
-<div class="card">
-<i class="fa-solid fa-laptop"></i>
-<h2>IT Recruitment</h2>
-<p>Professional IT hiring</p>
-</div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<div class="card">
-<i class="fa-solid fa-briefcase"></i>
-<h2>Permanent Hiring</h2>
-<p>Long term workforce support</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="jobs">
-
-<h1 class="title">
-Open Hiring Updates
-</h1>
-
-<div class="cards">
-
-<div class="card">
-<h2>Desktop Support Engineer</h2>
-<p>Location : Mumbai</p>
-<p>Experience : Freshers / Experienced</p>
-</div>
-
-<div class="card">
-<h2>Data Entry Operator</h2>
-<p>Location : Navi Mumbai</p>
-<p>Experience : Freshers</p>
-</div>
-
-<div class="card">
-<h2>Warehouse Staff</h2>
-<p>Location : Thane</p>
-<p>Experience : Any</p>
-</div>
-
-<!-- <div class="card">
-<h2>Part Time</h2>
-<p>Location : anywhere in mumbai</p>
-<p>Experience : Any</p>
-</div> -->
-  
-</div>
-
-</section>
-
-
-<section id="about">
-
-<h1 class="title">
-About Us
-</h1>
-
-<p class="about">
-
-Ramesh Staffing Services helps companies
-hire skilled employees and supports job seekers.
-
-</p>
-
-</section>
-
-
-
-<section id="contact">
-
-<h1 class="title">
-Contact Us
-</h1>
-
-<form id="contact-form">
-
-<input
-type="text"
-name="name"
-placeholder="Your Name"
-required>
-
-<input
-type="email"
-name="email"
-placeholder="Email"
-required>
-
-<textarea
-name="message"
-placeholder="Message"
-required></textarea>
-
-<button type="submit">
-Send Message
-</button>
-
-</form>
-
-</section>
-
-
-<footer>
-
-<p>
-© 2025 Ramesh Staffing Services
-</p>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
